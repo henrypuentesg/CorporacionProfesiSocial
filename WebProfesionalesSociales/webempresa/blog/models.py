@@ -13,8 +13,8 @@ class meta:
     verbose_name_plural = "categorias"
     ordering = ['-Created']
     
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
     
 class Post(models.Model):
     title = models.CharField(max_length=100, verbose_name="Titulo")
