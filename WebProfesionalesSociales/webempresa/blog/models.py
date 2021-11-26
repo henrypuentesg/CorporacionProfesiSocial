@@ -8,7 +8,7 @@ class Category(models.Model):
     created = models.DateTimeField(auto_now_add=True,verbose_name="Fecha de Creacion")
     updated = models.DateTimeField(auto_now=True,verbose_name="Fecha de actualizacion")
     
-class meta:
+class Meta:
     verbose_name = "categoria"
     verbose_name_plural = "categorias"
     ordering = ['-created']
@@ -27,7 +27,7 @@ class Post(models.Model):
     updated = models.DateTimeField(auto_now=True,verbose_name="Fecha de actualizacion")
     
     
-    class meta:
+    class Meta:
         verbose_name = "entrada"
         verbose_name_plural = "entradas"
         ordering = ['-created']
